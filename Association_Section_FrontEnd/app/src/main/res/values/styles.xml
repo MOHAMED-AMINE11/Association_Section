@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Thème principal de l'application -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Couleurs principales -->
+        <item name="colorPrimary">@color/green_primary</item>
+        <item name="colorPrimaryDark">@color/green_light</item>
+        <item name="colorAccent">@color/orange_primary</item>
+
+        <!-- Couleurs secondaires -->
+        <item name="colorSecondary">@color/orange_primary</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Style des composants Material -->
+        <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+        <item name="materialButtonStyle">@style/Widget.MaterialComponents.Button</item>
+    </style>
+
+    <!-- Style pour le Dropdown -->
+    <style name="DropDownStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxStrokeColor">@color/green_primary</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="endIconTint">@color/green_primary</item>
+        <item name="hintTextColor">@color/green_primary</item>
+    </style>
+
+    <!-- Style pour le DatePicker -->
+    <style name="MaterialCalendarTheme" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="colorPrimary">@color/green_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="materialCalendarHeaderTitle">@style/CalendarHeaderTitle</item>
+        <item name="materialCalendarHeaderToggleButton">@style/CalendarHeaderToggle</item>
+        <item name="materialCalendarHeaderConfirmButton">@style/CalendarButton</item>
+        <item name="materialCalendarHeaderDivider">@style/CalendarDivider</item>
+    </style>
+
+    <!-- Style pour les titres du calendrier -->
+    <style name="CalendarHeaderTitle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">?attr/textAppearanceHeadline6</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style pour les boutons du calendrier -->
+    <style name="CalendarButton" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/green_primary</item>
+        <item name="rippleColor">@color/green_primary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Style pour le bouton toggle du calendrier -->
+    <style name="CalendarHeaderToggle" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:tint">@color/green_primary</item>
+    </style>
+
+    <!-- Style pour le séparateur du calendrier -->
+    <style name="CalendarDivider">
+        <item name="android:background">@color/divider</item>
+    </style>
+
+    <!-- Style pour les TextInputLayout -->
+    <style name="CustomTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/green_primary</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="hintTextColor">@color/green_primary</item>
+        <item name="startIconTint">@color/green_primary</item>
+    </style>
+
+    <!-- Style pour les MaterialButton -->
+    <style name="CustomMaterialButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:minHeight">56dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="cornerRadius">28dp</item>
+        <item name="backgroundTint">@color/green_primary</item>
+    </style>
+
+    <!-- Style pour les MaterialCardView -->
+    <style name="CustomMaterialCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">@color/divider</item>
+    </style>
+</resources>
